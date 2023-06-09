@@ -1,0 +1,70 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+      "username": "adam",
+  "password": "12_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+   "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
+###
+
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
+###
+
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
+###
+
+GET http://localhost:3000/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
+###
+
+GET http://localhost:3000/tweets/3/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
+###
+
+GET http://localhost:3000/tweets/4/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
+###
+
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+Content-Type: application/json
+
+{
+ "tweet": "The Mornings..."
+}
+
+###
+
+DELETE  http://localhost:3000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY4NjEyOTI0OH0.APEfsj0zlS1vqwXngCMzeLUz4EunlaLT5ysPcYwbeAU
+
